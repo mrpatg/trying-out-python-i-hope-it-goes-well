@@ -1,1 +1,2 @@
-# trying-out-python-i-hope-it-goes-well
+# my first try at python
+
