@@ -1,6 +1,8 @@
 # app.py
 import farts
 from flask import Flask
+from flask import render_template
+
 
 app = Flask(__name__)
 
@@ -9,6 +11,10 @@ app = Flask(__name__)
 # defines a method for this route
 def hello(): 
     return "Test thing. Please ignore." 
+
+@app.route("/fart/on/<name>")
+def jesuschrist(name=None):
+    return render_template('name.html', name=name)
 
 # second route
 @app.route("/fart") 
